@@ -1,2 +1,2 @@
 # rocketseat
-Implementação de alguns cursos fornecidos pela Rocketseat
+Implementação de alguns projetos fornecidos pela Rocketseat
