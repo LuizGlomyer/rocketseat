@@ -1,4 +1,5 @@
 const express = require("express");
+const fs = require('fs');
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require('path');
@@ -20,8 +21,9 @@ const io = require("socket.io")(server, {
     }
   });
 
-
-mongoose.connect("mongodb+srv://glomyer:2010luiz@omnistack.9tzed.mongodb.net/semana09?retryWrites=true&w=majority", {
+// chave gerada no MongoDB Atlas
+var key = fs.readFileSync('key.txt', 'utf-8');
+mongoose.connect(key, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
