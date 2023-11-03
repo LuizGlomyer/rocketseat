@@ -1,11 +1,21 @@
-# React + TypeScript + Vite
+# upload.ai
 
+An application that generates textual output based on an input video. First, the video is converted to .mp3 using FFmpeg and WebAssembly, after that it uses OpenAI's Whisper to transcribe the contents of the audio to obtain context, and finally we use OpenAI's ChatGPT to returns a generated response. By default, there are prompt options to generate sugestions for titles for the video and to generate a description of its contents (tested only for Portuguese). 
+
+Video demonstration: [here](https://youtu.be/rCSpkbEb-Jo)
+
+## Technologies used:
+- OpenAI API
+- FFmpeg & WebAssembly
+- React & Vite
+- Tailwind CSS
+
+You can start the app using:
+```sh
+pnpm run dev
 ```
-front: npm run dev
-back: npm run dev
-```
 
-
+---
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

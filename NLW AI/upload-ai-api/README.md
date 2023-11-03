@@ -1,11 +1,12 @@
 # upload.ai API
 
-Technologies used:
+## Technologies used:
+- OpenAI Whisper
+- OpenAI ChatGPT API
 - TypeScript
 - Fastify
 - Prisma
 - SQLite
-- OpenAI API
 
 ## Instalation
 
